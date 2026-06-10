@@ -1,0 +1,167 @@
+---
+title: "Catálogo de Skills"
+description: Todas as skills disponíveis no Claude Code — 144+ comandos organizados por categoria.
+---
+
+import { CardGrid, Card } from '@astrojs/starlight/components';
+
+
+## GSD — Metodologia (67)
+
+| Skill | Descrição |
+|-------|----------|
+| [`/gsd-add-tests`](/skills/gsd/gsd-add-tests) | Generate tests for a completed phase based on UAT criteria and implementation |
+| [`/gsd-ai-integration-phase`](/skills/gsd/gsd-ai-integration-phase) | Generate an AI-SPEC.md design contract for phases that involve building AI systems. |
+| [`/gsd-audit-fix`](/skills/gsd/gsd-audit-fix) | Autonomous audit-to-fix pipeline — find issues, classify, fix, test, commit |
+| [`/gsd-audit-milestone`](/skills/gsd/gsd-audit-milestone) | Audit milestone completion against original intent before archiving |
+| [`/gsd-audit-uat`](/skills/gsd/gsd-audit-uat) | Cross-phase audit of all outstanding UAT and verification items |
+| [`/gsd-autonomous`](/skills/gsd/gsd-autonomous) | Run all remaining phases autonomously — discuss→plan→execute per phase |
+| [`/gsd-capture`](/skills/gsd/gsd-capture) | Capture ideas, tasks, notes, and seeds to their destination |
+| [`/gsd-cleanup`](/skills/gsd/gsd-cleanup) | Archive accumulated phase directories from completed milestones |
+| [`/gsd-code-review`](/skills/gsd/gsd-code-review) | Review source files changed during a phase for bugs, security issues, and code quality problems |
+| [`/gsd-complete-milestone`](/skills/gsd/gsd-complete-milestone) | Archive completed milestone and prepare for next version |
+| [`/gsd-config`](/skills/gsd/gsd-config) | Configure GSD settings — workflow toggles, advanced knobs, integrations, and model profile |
+| [`/gsd-debug`](/skills/gsd/gsd-debug) | Systematic debugging with persistent state across context resets |
+| [`/gsd-discuss-phase`](/skills/gsd/gsd-discuss-phase) | Gather phase context through adaptive questioning before planning. |
+| [`/gsd-docs-update`](/skills/gsd/gsd-docs-update) | Generate or update project documentation verified against the codebase |
+| [`/gsd-eval-review`](/skills/gsd/gsd-eval-review) | Audit an executed AI phase's evaluation coverage and produce an EVAL-REVIEW.md remediation plan. |
+| [`/gsd-execute-phase`](/skills/gsd/gsd-execute-phase) | Execute all plans in a phase with wave-based parallelization |
+| [`/gsd-explore`](/skills/gsd/gsd-explore) | Socratic ideation and idea routing — think through ideas before committing to plans |
+| [`/gsd-extract-learnings`](/skills/gsd/gsd-extract-learnings) | Extract decisions, lessons, patterns, and surprises from completed phase artifacts |
+| [`/gsd-fast`](/skills/gsd/gsd-fast) | Execute a trivial task inline — no subagents, no planning overhead |
+| [`/gsd-forensics`](/skills/gsd/gsd-forensics) | Post-mortem investigation for failed GSD workflows — diagnoses what went wrong. |
+| [`/gsd-graphify`](/skills/gsd/gsd-graphify) | Build, query, and inspect the project knowledge graph in .planning/graphs/ |
+| [`/gsd-health`](/skills/gsd/gsd-health) | Diagnose planning directory health and optionally repair issues |
+| [`/gsd-help`](/skills/gsd/gsd-help) | Show available GSD commands and usage guide |
+| [`/gsd-import`](/skills/gsd/gsd-import) | Ingest external plans with conflict detection against project decisions before writing anything. |
+| [`/gsd-inbox`](/skills/gsd/gsd-inbox) | Triage and review open GitHub issues and PRs against project templates and contribution guidelines. |
+| [`/gsd-ingest-docs`](/skills/gsd/gsd-ingest-docs) | Bootstrap or merge a .planning/ setup from existing ADRs, PRDs, SPECs, and docs in a repo. |
+| [`/gsd-manager`](/skills/gsd/gsd-manager) | Interactive command center for managing multiple phases from one terminal |
+| [`/gsd-map-codebase`](/skills/gsd/gsd-map-codebase) | Analyze codebase with parallel mapper agents to produce .planning/codebase/ documents |
+| [`/gsd-milestone-summary`](/skills/gsd/gsd-milestone-summary) | Generate a comprehensive project summary from milestone artifacts for team onboarding and review |
+| [`/gsd-mvp-phase`](/skills/gsd/gsd-mvp-phase) | Plan a phase as a vertical MVP slice — user story, SPIDR splitting, then plan-phase |
+| [`/gsd-new-milestone`](/skills/gsd/gsd-new-milestone) | Start a new milestone cycle — update PROJECT.md and route to requirements |
+| [`/gsd-new-project`](/skills/gsd/gsd-new-project) | Initialize a new project with deep context gathering and PROJECT.md |
+| [`/gsd-ns-context`](/skills/gsd/gsd-ns-context) | codebase intelligence – map graphify docs learnings |
+| [`/gsd-ns-ideate`](/skills/gsd/gsd-ns-ideate) | exploration capture – explore sketch spike spec capture |
+| [`/gsd-ns-manage`](/skills/gsd/gsd-ns-manage) | config workspace – workstreams thread update ship inbox |
+| [`/gsd-ns-project`](/skills/gsd/gsd-ns-project) | project lifecycle – milestones audits summary |
+| [`/gsd-ns-review`](/skills/gsd/gsd-ns-review) | quality gates – code review debug audit security eval ui |
+| [`/gsd-ns-workflow`](/skills/gsd/gsd-ns-workflow) | workflow – discuss plan execute verify phase progress |
+| [`/gsd-pause-work`](/skills/gsd/gsd-pause-work) | Create context handoff when pausing work mid-phase |
+| [`/gsd-phase`](/skills/gsd/gsd-phase) | CRUD for phases in ROADMAP.md — add, insert, remove, or edit phases |
+| [`/gsd-plan-phase`](/skills/gsd/gsd-plan-phase) | Create detailed phase plan (PLAN.md) with verification loop |
+| [`/gsd-plan-review-convergence`](/skills/gsd/gsd-plan-review-convergence) | Cross-AI plan convergence loop — replan with review feedback until no HIGH concerns remain. |
+| [`/gsd-pr-branch`](/skills/gsd/gsd-pr-branch) | Create a clean PR branch by filtering out .planning/ commits — ready for code review |
+| [`/gsd-profile-user`](/skills/gsd/gsd-profile-user) | Generate developer behavioral profile and create Claude-discoverable artifacts |
+| [`/gsd-progress`](/skills/gsd/gsd-progress) | Check progress, advance workflow, or dispatch freeform intent — the unified GSD situational command |
+| [`/gsd-quick`](/skills/gsd/gsd-quick) | Execute a quick task with GSD guarantees (atomic commits, state tracking) but skip optional agents |
+| [`/gsd-resume-work`](/skills/gsd/gsd-resume-work) | Resume work from previous session with full context restoration |
+| [`/gsd-review`](/skills/gsd/gsd-review) | Request cross-AI peer review of phase plans from external AI CLIs |
+| [`/gsd-review-backlog`](/skills/gsd/gsd-review-backlog) | Review and promote backlog items to active milestone |
+| [`/gsd-secure-phase`](/skills/gsd/gsd-secure-phase) | Retroactively verify threat mitigations for a completed phase |
+| [`/gsd-settings`](/skills/gsd/gsd-settings) | Configure GSD workflow toggles and model profile |
+| [`/gsd-ship`](/skills/gsd/gsd-ship) | Create PR, run review, and prepare for merge after verification passes |
+| [`/gsd-sketch`](/skills/gsd/gsd-sketch) | Sketch UI/design ideas with throwaway HTML mockups, or propose what to sketch next (frontier mode) |
+| [`/gsd-spec-phase`](/skills/gsd/gsd-spec-phase) | Clarify WHAT a phase delivers with ambiguity scoring; produces a SPEC.md before discuss-phase. |
+| [`/gsd-spike`](/skills/gsd/gsd-spike) | Spike an idea through experiential exploration, or propose what to spike next (frontier mode) |
+| [`/gsd-stats`](/skills/gsd/gsd-stats) | Display project statistics — phases, plans, requirements, git metrics, and timeline |
+| [`/gsd-surface`](/skills/gsd/gsd-surface) | Toggle which skills are surfaced — apply a profile, list, or disable a cluster without reinstall |
+| [`/gsd-thread`](/skills/gsd/gsd-thread) | Manage persistent context threads for cross-session work |
+| [`/gsd-ui-phase`](/skills/gsd/gsd-ui-phase) | Generate UI design contract (UI-SPEC.md) for frontend phases |
+| [`/gsd-ui-review`](/skills/gsd/gsd-ui-review) | Retroactive 6-pillar visual audit of implemented frontend code |
+| [`/gsd-ultraplan-phase`](/skills/gsd/gsd-ultraplan-phase) | [BETA] Offload plan phase to Claude Code's ultraplan cloud; review in browser and import back. |
+| [`/gsd-undo`](/skills/gsd/gsd-undo) | Safe git revert. Roll back phase or plan commits using the phase manifest with dependency checks. |
+| [`/gsd-update`](/skills/gsd/gsd-update) | Update GSD to latest version with changelog display |
+| [`/gsd-validate-phase`](/skills/gsd/gsd-validate-phase) | Retroactively audit and fill Nyquist validation gaps for a completed phase |
+| [`/gsd-verify-work`](/skills/gsd/gsd-verify-work) | Validate built features through conversational UAT |
+| [`/gsd-workspace`](/skills/gsd/gsd-workspace) | Manage GSD workspaces — create, list, or remove isolated workspace environments |
+| [`/gsd-workstreams`](/skills/gsd/gsd-workstreams) | Manage parallel workstreams — list, create, switch, status, progress, complete, and resume |
+
+## Upscale & GHL (4)
+
+| Skill | Descrição |
+|-------|----------|
+| [`/upscale-bot-builder`](/skills/upscale/upscale-bot-builder) | --- |
+| [`/upscale-ghl-automacoes`](/skills/upscale/upscale-ghl-automacoes) | --- |
+| [`/upscale-ghl-gatilhos`](/skills/upscale/upscale-ghl-gatilhos) | Catálogo completo de triggers (gatilhos) e actions (ações) do GoHighLevel Workflows. Referência rápi |
+| [`/upscale-ghl-playwright`](/skills/upscale/upscale-ghl-playwright) | Scripts Python com Playwright para automatizar operações do GHL que NÃO estão disponíveis na API V2. |
+
+## Marketing & Conteúdo (8)
+
+| Skill | Descrição |
+|-------|----------|
+| [`/blotato`](/skills/marketing/blotato) | Social media publishing and scheduling platform. Publish and schedule posts across Instagram, Linked |
+| [`/brand-designer`](/skills/marketing/brand-designer) | Universal brand designer that investigates brand DNA from local files, design systems, and approved  |
+| [`/canva`](/skills/marketing/canva) | Create, search, autofill, and export designs from Canva. Enables agents to generate visual content,  |
+| [`/designer`](/skills/marketing/designer) | Social media creative designer. Creates carrosseis, posts, stories, banners and all visual content f |
+| [`/designer-magnific`](/skills/marketing/designer-magnific) | **Designer Magnific** — Agente criativo multi-plataforma para a UP Marketing & Comunicação. Gera ima |
+| [`/instagram`](/skills/marketing/instagram) | Manage Instagram Business accounts via Meta's Graph API. Use when the user wants to: (1) View Instag |
+| [`/instagram-publisher`](/skills/marketing/instagram-publisher) | Publishes Instagram carousel posts from local images. Uploads images to imgbb for temporary public h |
+| [`/rafa-roteiros`](/skills/marketing/rafa-roteiros) | Ativar o personagem Rafa — especialista em roteiros virais para Instagram Reels com foco em IA aplic |
+
+## Desenvolvimento (18)
+
+| Skill | Descrição |
+|-------|----------|
+| [`/apify`](/skills/dev/apify) | Web scraping and automation platform. Extract data from any website, run pre-built scrapers (Actors) |
+| [`/cost-reducer`](/skills/dev/cost-reducer) | Analisar e reduzir custos de infraestrutura, serviços e código. Identifica gargalos financeiros e pr |
+| [`/epic-paper`](/skills/dev/epic-paper) | Design anything in Paper.design using the Paper MCP. ALWAYS use this skill when Deborah says things  |
+| [`/frontend-design`](/skills/dev/frontend-design) | Criar interfaces de alta qualidade visual e usabilidade. Vai além do funcional: entrega componentes  |
+| [`/git-guardrails-claude-code`](/skills/dev/git-guardrails-claude-code) | Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc. |
+| [`/migrate-to-shoehorn`](/skills/dev/migrate-to-shoehorn) | Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions s |
+| [`/n8n`](/skills/dev/n8n) | Criar, depurar e otimizar workflows no n8n. Conhece a fundo a API interna, nodes customizados e padr |
+| [`/scaffold-exercises`](/skills/dev/scaffold-exercises) | Create exercise directory structures with sections, problems, solutions, and explainers that pass li |
+| [`/scalability`](/skills/dev/scalability) | Avaliar e implementar estratégias de escalabilidade em sistemas de software. Cobre APIs, bancos de d |
+| [`/security`](/skills/dev/security) | Identificar e corrigir vulnerabilidades de segurança em aplicações web, APIs, bancos de dados e infr |
+| [`/self-healing`](/skills/dev/self-healing) | Fazer o Claude Code aprender com erros, criar novas skills automaticamente quando identifica padrões |
+| [`/setup-matt-pocock-skills`](/skills/dev/setup-matt-pocock-skills) | Sets up an `## Agent skills` block in AGENTS.md/CLAUDE.md and `docs/agents/` so the engineering skil |
+| [`/setup-pre-commit`](/skills/dev/setup-pre-commit) | Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current r |
+| [`/subagent-driven-development`](/skills/dev/subagent-driven-development) | Use when executing implementation plans with independent tasks in the current session |
+| [`/systematic-debugging`](/skills/dev/systematic-debugging) | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes |
+| [`/tdd`](/skills/dev/tdd) | Test-driven development with red-green-refactor loop. Use when user wants to build features or fix b |
+| [`/test-driven-development`](/skills/dev/test-driven-development) | Use when implementing any feature or bugfix, before writing implementation code |
+| [`/trigger-dev`](/skills/dev/trigger-dev) | Criar, configurar e depurar jobs em background usando Trigger.dev. Cobre desde tasks simples até wor |
+
+## Ferramentas & Workflow (37)
+
+| Skill | Descrição |
+|-------|----------|
+| [`/brainstorming`](/skills/tools/brainstorming) | You MUST use this before any creative work - creating features, building components, adding function |
+| [`/caveman`](/skills/tools/caveman) | Ultra-compressed communication mode. Cuts token usage ~75% by dropping filler, articles, and pleasan |
+| [`/create-skill`](/skills/tools/create-skill) | Criar novas skills para o Claude Code que sejam úteis, bem documentadas e funcionem de forma consist |
+| [`/customer-support`](/skills/tools/customer-support) | Redigir respostas de suporte ao cliente que resolvam o problema, mantenham o relacionamento e sigam  |
+| [`/diagnose`](/skills/tools/diagnose) | Disciplined diagnosis loop for hard bugs and performance regressions. Reproduce → minimise → hypothe |
+| [`/dispatching-parallel-agents`](/skills/tools/dispatching-parallel-agents) | Use when facing 2+ independent tasks that can be worked on without shared state or sequential depend |
+| [`/executing-plans`](/skills/tools/executing-plans) | Use when you have a written implementation plan to execute in a separate session with review checkpo |
+| [`/find-skills`](/skills/tools/find-skills) | Helps users discover and install agent skills when they ask questions like "how do I do X", "find a  |
+| [`/finishing-a-development-branch`](/skills/tools/finishing-a-development-branch) | Use when implementation is complete, all tests pass, and you need to decide how to integrate the wor |
+| [`/grill-me`](/skills/tools/grill-me) | Interview the user relentlessly about a plan or design until reaching shared understanding, resolvin |
+| [`/grill-with-docs`](/skills/tools/grill-with-docs) | Grilling session that challenges your plan against the existing domain model, sharpens terminology,  |
+| [`/handoff`](/skills/tools/handoff) | Compact the current conversation into a handoff document for another agent to pick up. |
+| [`/image-creator`](/skills/tools/image-creator) | Renders HTML/CSS into production-ready images via Playwright. Accepts complete HTML content, opens i |
+| [`/image-fetcher`](/skills/tools/image-fetcher) | Acquires visual assets from multiple sources: web image search, live website screenshots via Playwri |
+| [`/improve-codebase-architecture`](/skills/tools/improve-codebase-architecture) | Find deepening opportunities in a codebase, informed by the domain language in CONTEXT.md and the de |
+| [`/karpathy-guidelines`](/skills/tools/karpathy-guidelines) | Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactor |
+| [`/know-me`](/skills/tools/know-me) | Manter e utilizar contexto persistente sobre o usuário, seu trabalho, preferências e histórico para  |
+| [`/opensquad`](/skills/tools/opensquad) | Opensquad — Multi-agent orchestration framework. Create and run AI squads for your business. |
+| [`/opensquad-agent-creator`](/skills/tools/opensquad-agent-creator) | Guides creation and maintenance of best-practice files for the Opensquad best-practices library. Han |
+| [`/opensquad-skill-creator`](/skills/tools/opensquad-skill-creator) | --- |
+| [`/prototype`](/skills/tools/prototype) | Build a throwaway prototype to flesh out a design before committing to it. Routes between two branch |
+| [`/receiving-code-review`](/skills/tools/receiving-code-review) | Use when receiving code review feedback, before implementing suggestions, especially if feedback see |
+| [`/requesting-code-review`](/skills/tools/requesting-code-review) | Use when completing tasks, implementing major features, or before merging to verify work meets requi |
+| [`/researcher`](/skills/tools/researcher) | Conduzir pesquisas aprofundadas sobre qualquer tema, sintetizando informações de múltiplas fontes em |
+| [`/skillshare`](/skills/tools/skillshare) | Manages and syncs AI CLI skills and agents across 50+ tools from a single source.
+Use this skill whe |
+| [`/teach`](/skills/tools/teach) | Teach the user a new skill or concept, within this workspace. |
+| [`/to-issues`](/skills/tools/to-issues) | Break a plan, spec, or PRD into independently-grabbable issues on the project issue tracker using tr |
+| [`/to-prd`](/skills/tools/to-prd) | Turn the current conversation context into a PRD and publish it to the project issue tracker. Use wh |
+| [`/triage`](/skills/tools/triage) | Triage issues through a state machine driven by triage roles. Use when user wants to create an issue |
+| [`/ui-ux-pro-max`](/skills/tools/ui-ux-pro-max) | Senior UI/UX designer + engineer. Design system, UX strategy, accessibility, motion, critique e entr |
+| [`/using-git-worktrees`](/skills/tools/using-git-worktrees) | Use when starting feature work that needs isolation from current workspace or before executing imple |
+| [`/using-superpowers`](/skills/tools/using-superpowers) | Use when starting any conversation - establishes how to find and use skills, requiring Skill tool in |
+| [`/verification-before-completion`](/skills/tools/verification-before-completion) | Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - req |
+| [`/write-a-skill`](/skills/tools/write-a-skill) | Create new agent skills with proper structure, progressive disclosure, and bundled resources. Use wh |
+| [`/writing-plans`](/skills/tools/writing-plans) | Use when you have a spec or requirements for a multi-step task, before touching code |
+| [`/writing-skills`](/skills/tools/writing-skills) | Use when creating new skills, editing existing skills, or verifying skills work before deployment |
+| [`/zoom-out`](/skills/tools/zoom-out) | Tell the agent to zoom out and give broader context or a higher-level perspective. Use when you're u |
