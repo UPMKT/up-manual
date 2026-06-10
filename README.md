@@ -1,49 +1,58 @@
-# Starlight Starter Kit: Basics
+<!-- generated-by: gsd-doc-writer -->
+# UP Manual
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+Base de conhecimento operacional da UP Marketing & Comunicação — 134+ skills do Claude Code, 21 squads Opensquad, guias GHL/Upscale e metodologia GSD. Site estático gerado com Astro Starlight e publicado automaticamente no Vercel.
 
-```
-npm create astro@latest -- --template starlight
-```
+## Instalação
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro + Starlight project, you'll see the following folders and files:
-
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+```bash
+git clone https://github.com/UPMKT/up-manual
+cd up-manual
+npm install
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+## Quick Start
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+1. Gerar o conteúdo a partir das skills e squads locais:
 
-Static assets, like favicons, can be placed in the `public/` directory.
+```bash
+python3 scripts/sync.py
+```
 
-## 🧞 Commands
+2. Iniciar o servidor de desenvolvimento:
 
-All commands are run from the root of the project, from a terminal:
+```bash
+npm run dev
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+O site fica disponível em `http://localhost:4321`.
 
-## 👀 Want to learn more?
+## Comandos
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+| Comando | Descrição |
+|---------|-----------|
+| `npm run dev` | Servidor local com hot-reload |
+| `npm run build` | Build estático para `dist/` |
+| `npm run preview` | Pré-visualizar o build local |
+| `python3 scripts/sync.py` | Regenerar todo o conteúdo (skills, squads, GHL, GSD) |
+
+## Estrutura de Conteúdo
+
+O conteúdo em `src/content/docs/` é gerido pelo `scripts/sync.py` — não editar manualmente os ficheiros gerados.
+
+```
+src/content/docs/
+├── skills/          # 134+ skills por categoria (gsd, upscale, marketing, dev, tools)
+├── squads/          # 21 squads Opensquad
+├── ghl/             # Guias GoHighLevel & Upscale
+├── gsd/             # Documentação da metodologia GSD
+└── reference/       # Referências técnicas
+```
+
+## Deploy
+
+O deploy é feito automaticamente no Vercel a cada push para o repositório. A configuração está em `vercel.json` — build command `npm run build`, output directory `dist`.
+
+## Licença
+
+Uso interno — UP Marketing & Comunicação.
